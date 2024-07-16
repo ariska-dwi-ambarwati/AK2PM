@@ -1,0 +1,323 @@
+/* CSS untuk styling umum */
+body {
+    background-color: #ffffff;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeIn 0.5s ease;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/* Navbar styling */
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    padding-top: 20px;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.navbar-top {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #444;
+    text-align: center;
+}
+
+.navbar-top img {
+    height: 70px; /* Sesuaikan tinggi sesuai kebutuhan */
+    margin-right: 10px; /* Jarak antara gambar */
+    width: 100%;
+    height: auto;
+}
+
+.navbar-left {
+    padding: 10px;
+    color: #fff;
+}
+
+.navbar-left p {
+    color: #fff;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.navbar-left ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar-left ul li {
+    margin-bottom: 10px;
+}
+
+.navbar-left ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-left ul li a:hover {
+    background-color: #555;
+}
+
+.dropdown .dropdown-toggle {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropdown .arrow {
+    margin-left: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    z-index: 1;
+    left: 0;
+    top: 100%;
+}
+
+.dropdown-content li {
+    padding: 8px 16px;
+    background-color: #333;
+}
+
+.dropdown-content li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #555;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease;
+}
+
+.content h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Form styling */
+.login-container,
+.register-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-title,
+.register-title {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.login-form,
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form label,
+.register-form label {
+    margin-bottom: 5px;
+    color: #555;
+    text-align: left;
+    width: 100%;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.input-container input,
+.register-form input {
+    width: calc(100% - 40px);
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-container #togglePassword,
+.register-form .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+    cursor: pointer;
+}
+
+.login-form button,
+.register-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.login-form button:hover,
+.register-form button:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.register-link a:hover {
+    color: #0056b3;
+}
+
+.error-message {
+    color: #ff0000;
+    margin-top: 10px;
+}
+
+.back-link {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.back-link a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-link a:hover {
+    color: #0056b3;
+}
+
+.back-link a i {
+    margin-right: 5px;
+}
+
+/* CSS untuk notifikasi */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    animation: fadeOut 1s forwards 4s;
+    z-index: 1000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
